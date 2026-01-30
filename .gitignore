@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Data (動画や音声ファイルは重いのでアップロードしない)
+*.mp4
+*.wav
+*.mov
+
+# OS
+.DS_Store

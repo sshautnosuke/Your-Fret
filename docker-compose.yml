@@ -1,0 +1,8 @@
+# 自分のPCのフォルダとコンテナ内を同期
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
