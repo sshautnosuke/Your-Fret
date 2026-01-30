@@ -1,13 +1,25 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 venv/
 .env
 
-# Data (動画や音声ファイルは重いのでアップロードしない)
-*.mp4
-*.wav
-*.mov
+# Docker
+.docker/
+# Docker Composeの実行時に生成される一時ファイルなどがあれば
+
+# Project Data (動画や音声ファイル、学習データ)
+# data/ フォルダの中身を無視しつつ、フォルダ構造だけ残したい場合
+data/*.mp4
+data/*.wav
+data/*.mov
+# 解析結果の出力ファイルも無視
+data/output.jpg
 
 # OS
 .DS_Store
+Thumbs.db
+
+# IDE (VS Codeなど)
+.vscode/
